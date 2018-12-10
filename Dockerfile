@@ -28,6 +28,8 @@ RUN cd ${HOME}/catkin_ws \
 
 RUN echo "source ~/catkin_ws/devel/setup.bash" >> ${HOME}/.bashrc
 
+COPY README.ipynb .
+
 RUN chown -R ${NB_UID} ${HOME}
 
 USER ${NB_USER}
