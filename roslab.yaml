@@ -1,0 +1,12 @@
+name: cartographer-ros
+
+distro: kinetic
+
+runtime: nvidia
+
+build: catkin_make
+
+packages:
+  - python-wstool
+  - python-rosdep
+  - ninja-build
